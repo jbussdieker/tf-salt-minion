@@ -4,7 +4,7 @@ resource "template_file" "salt-minion" {
     hostname             = "salt-minion"
     fqdn                 = "salt-minion.local"
     role                 = "salt-minion"
-    salt_master          = "salt"
+    salt_master          = "${var.salt_master}"
     env                  = "${var.env}"
   }
 }

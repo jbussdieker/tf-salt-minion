@@ -11,3 +11,4 @@ variable "key_name" {
 }
 
 variable "env" {}
+variable "salt_master" {}
